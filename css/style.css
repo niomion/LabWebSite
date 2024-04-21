@@ -190,7 +190,7 @@ a:hover {
     width: 100%;
     background-color: #404044; 
     color: white;
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .innerblock2 {
@@ -256,10 +256,9 @@ a:hover {
   
   .innerblock3 {
     display: flex;
-    align-items: center;
     width: 50%;
-    padding: 2%;
-    font-size: 30px;
+    padding: 1% 2% 0 0;
+    font-size: 27px;
     text-align: justify;
   }
 
@@ -285,7 +284,7 @@ a:hover {
     width: 100%;
     background-color: #404044; 
     color: white;
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .innerblock22 {
@@ -300,7 +299,7 @@ a:hover {
   .innerblock23 {
     padding: 2%;
     width: 31.6%;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .innerblock231 {
@@ -597,12 +596,12 @@ a:hover {
         display: block;
     }
 
-    .text-overlay {
-        font-size: 150%;
+    .text-overlay h1 {
+      font-size: 50px;
     }
 
-    .text-overlay2 {
-        font-size: 100%;
+    .text-overlay2 h1{
+      font-size: 35px;
     }
         /* Head */
 
@@ -620,7 +619,7 @@ a:hover {
     }
 
      .innerblock1 {
-        font-size: 25px;
+        font-size: 20px;
       }
 
      .innerblock2 {
@@ -628,16 +627,27 @@ a:hover {
         width: 100%;
       }
 
-      .innerblock31 {
+      .innerblock2 img {
+        height: 300px;
+        width: 300px;
+        object-fit:fill;
+      }
+      
+      .innerblock3 {
         font-size: 25px;
+        padding: 2%;
+      }
+
+      .innerblock31 {
+        font-size: 20px;
       }
 
       .innerblock41 {
-        font-size: 25px;
+        font-size: 20px;
       }
 
       .innerblock51 {
-        font-size: 25px;
+        font-size: 20px;
       }
 
       .innerblock3 {
@@ -648,10 +658,11 @@ a:hover {
       .innerblock23 {
         width: 100%;
         margin-bottom: 10%;
+        font-size: 25px;
       }
 
       .innerblock21 {
-        font-size: 25px;
+        font-size: 20px;
       }
 
       .innerfblock {
@@ -676,14 +687,16 @@ a:hover {
   }
 
   @media only screen and (max-width: 480px) {
-    .text-overlay {
-        font-size: 85%;
+    .text-overlay h1 {
+      font-size: 30px;
     }
 
     .text-overlay2 {
-        top: 47%;
-        left: 53%;
-        font-size: 75%;
+      left: 52%;
+    }
+
+    .text-overlay2 h1{
+      font-size: 27px;
     }
     
   }
