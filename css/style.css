@@ -298,6 +298,7 @@ a:hover {
 
   .innerblock23 {
     padding: 2%;
+    padding-bottom: 3%;
     width: 31.6%;
     font-size: 25px;
   }
@@ -696,7 +697,22 @@ a:hover {
     }
 
     .text-overlay2 h1{
-      font-size: 27px;
+      font-size: 25px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 414px) {
+    .text-overlay h1 {
+      font-size: 25px;
+    }
+
+    .text-overlay2 {
+      left: 52%;
+    }
+
+    .text-overlay2 h1{
+      font-size: 20px;
     }
     
   }
