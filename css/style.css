@@ -534,8 +534,29 @@ a:hover {
   .flex-footer {
     margin-top: 3%;
     display: flex;
-    height: 5vw;
     background-color: #404044; 
+    color: gray;
+    align-items: center;
+    padding: 1%;
+    justify-content: space-between;
+  }
+
+   .inner-footer {
+    justify-self: left;
+    font-size: 15px;
+   }
+
+   .inner-footer2 {
+    font-size: 30px;
+   }
+
+  .inner-footer2 i {
+    color: gray;
+  }
+
+  .inner-footer2 i:hover {
+    transition: 0.4s ease;
+    color: darkgray
   }
 
   /* Footer */
