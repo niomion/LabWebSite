@@ -1,4 +1,32 @@
+var firstDivs = document.querySelectorAll(".innerblockq");
 
+firstDivs.forEach(function(firstDiv) {
+  firstDiv.addEventListener("click", function() {
+    var secondDiv = firstDiv.nextElementSibling;
+    var computedStyle = window.getComputedStyle(secondDiv);
+    if (computedStyle.display === "none" || computedStyle.display === "") {
+      secondDiv.style.display = "block";
+    } else {
+      secondDiv.style.display = "none";
+    }
+  });
+});
+
+//
+
+
+
+//
+
+function preloadImage(url) {
+  var img = new Image();
+  img.src = url;
+}
+
+preloadImage("../img/logo.png");
+preloadImage("../img/logohover.png");
+
+// open nav
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
@@ -31,7 +59,7 @@ function openNav() {
 
 window.addEventListener('scroll', function() {
     var scrollTop = window.scrollY;
-    var gradientDegree = scrollTop / (document.body.scrollHeight - window.innerHeight) * 360;
+    var gradientDegree = scrollTop / (document.body.scrollHeight - window.innerHeight) * 120;
     document.body.style.background = 'linear-gradient(' + gradientDegree + 'deg, rgba(53,92,125,1) 0%, rgba(108,91,123,1) 35%, rgba(192,108,132,1) 100%)';
 });
 
@@ -41,26 +69,25 @@ let slideIndex = 0;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
 } 
-

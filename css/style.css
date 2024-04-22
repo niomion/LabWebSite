@@ -33,11 +33,25 @@ body {
     height: 3vw;
 }
 
+.linkmain:hover {
+  color:deeppink;
+}
+
+.logolink:hover img.merg1 {
+  content: url("/img/logohover.png");
+}
+
+.logolink.linkmain {
+width: 100%;
+display: flex;
+align-items: center;
+}
+
 .flex-contact > div {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1%;
+    margin-right: 2%;
 }
 
 .flex-nav {
@@ -72,7 +86,7 @@ a {
 
 a:hover {
     transition: 0.4s ease;
-    color: lightgray;
+    color: deeppink;
 }
 
 .change-background {
@@ -83,6 +97,7 @@ a:hover {
     margin: 1% 1% 1% 1%;
     height: 50px;
     width: 50px;
+    transition: 0.4s ease;
 }
 
 /* Nav */
@@ -215,6 +230,39 @@ a:hover {
   .mySlides {
     display: none;
   }
+
+  .slideshow-container2 {
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides2 {
+    display: none;
+  }
+
+  .prev2, .next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev2:hover, .next2:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
   
   .prev, .next {
     cursor: pointer;
@@ -264,6 +312,53 @@ a:hover {
 
 
   /* Block1 */
+
+  /* Block1.1 */ 
+
+  .block11 {
+    margin: auto;
+    width: 95%;
+    margin-top: 3%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    color:black;
+  }
+
+  .innerblock81 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #404044; 
+    color: white;
+    font-size: 30px;
+    padding: 1%;
+  }
+
+  .innerblock82 {
+    align-items: center;
+    display: flex;
+    width: 50%;
+  }
+
+  .innerblock82 img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    padding: 2%;
+  }
+
+  .innerblock83 {
+    display: flex;
+    width: 50%;
+    padding: 1% 1% 0 1%;
+    font-size: 27px;
+    text-align: justify;
+  }
+
+
+  /* Block1.2 */ 
 
   /* Block2 */
 
@@ -338,6 +433,11 @@ a:hover {
 
   .innerblock23 button:hover {
     transition: 0.3s ease;
+    background-color:#1e1f1c;
+  }
+
+  .innerblock23 button:active {
+    transition: 0s ease;
     color: gray;
     background-color:#1e1f1c;
   }
@@ -614,6 +714,10 @@ a:hover {
         font-size: 20px;
     }
 
+    .block11 {
+      font-size: 20px;
+  }
+
     .block4 {
       width: 95%;
       flex-direction: column;
@@ -623,7 +727,17 @@ a:hover {
         font-size: 20px;
       }
 
+      .innerblock81 {
+        font-size: 20px;
+        text-align: center;
+      }
+
      .innerblock2 {
+        display: flex;
+        width: 100%;
+      }
+
+      .innerblock82 {
         display: flex;
         width: 100%;
       }
@@ -633,10 +747,22 @@ a:hover {
         width: 300px;
         object-fit:fill;
       }
+
+      .innerblock82 img {
+        height: 300px;
+        width: 300px;
+        object-fit:fill;
+      }
       
       .innerblock3 {
         font-size: 25px;
         padding: 2%;
+      }
+
+      .innerblock83 {
+        font-size: 25px;
+        padding: 2%;
+        width: 100%;
       }
 
       .innerblock31 {
@@ -685,6 +811,10 @@ a:hover {
         width: 100%;
         flex-direction: column;
       }
+
+      .logolink.linkmain {
+        justify-content: center;
+        }
   }
 
   @media only screen and (max-width: 480px) {
