@@ -38,7 +38,7 @@ body {
 }
 
 .logolink:hover img.merg1 {
-  content: url("../img/logohover.png");
+  content: url("/img/logohover.png");
 }
 
 .logolink.linkmain {
@@ -156,139 +156,138 @@ a:hover {
 
   /* ----- */
 
-  /* Main */
+  /* Body */
 
-  .djs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* block1 */
+
+  .block1 {
+    margin: auto;
+    width: 95%;
+    margin-top: 3%;
+    position: relative; /* Додаємо позицію relative для дочірніх блоків */
+    background-color: white;
+    background: url("../img/nbar.jpg");
+    background-size: cover;
+    height: 50vw;
+    border: 3px solid #404044;
+    border-bottom: 0;
+    z-index: 1;
+}
+
+.text-overlay, .text-overlay2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 50px;
     text-align: center;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    z-index: 2;
+}
+
+.text-overlay {
+    width: 90%;
+    font-size: 2.5vw; 
+}
+
+.text-overlay2 {
+    width: 100%;
+    font-size: 1.5vw; 
+    top: 60%; 
+}
+
+  /* block1 */
+
+  /* block2 */
+
+  .block2 {
+    margin: auto;
+    width: 95%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    color:black;
   }
 
-  /* List */
-
-  .flex-main {
+  .innerblock21 {
     display: flex;
     justify-content: center;
-}
-
-.flex-main > div {
-    font-size: 50px;
-    color: white;
-    margin-top: 3%;
-    width: 80%;
-}
-
-table {
-    background-color:  #404044;
     width: 100%;
-    text-shadow: 
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
+    background-color: #404044; 
+    color: white;
+    font-size: 30px;
+  }
 
-td {
+  .innerblock22 {
+    align-items: center;
+    display: flex;
     width: 25%;
-    position: relative;
-    overflow: hidden;
-}
-
-td:not(:first-child) {
-    display: none;
-    width: 1000px;
-}
-
-tr:hover td {
-    font-size: 35px;
-    display: table-cell;
-}
-
-tr:not(:hover) td:first-child {
+    font-size: 20px;
+    justify-content: center;
     text-align: center;
+    height: 250px;
+    border: #404044 3px solid;
+  }
+
+  .innerblock22:hover {
+    transition: 0.4s ease;
+    background-color: gray;
+    color: white;
+  }
+
+  .innerblock22:active {
+    transition: 0.1s ease;
+    background-color: rgb(70, 70, 70);
+    color: black;
+  }
+
+  .hidden-div {
+    width: 100%;
+    display: none; 
+    border: #404044 3px solid;
+}
+ /* menu */
+
+ .innermenu {
+    padding: 1%;
+    display: flex;
+    width: 100%;
+    border-bottom: gray 3px solid;
+ }
+
+.menuphoto {
+    display: flex;
+    justify-content: end;
+width: 25%;
 }
 
-tr {
-    height: 50px;
-    transition: height 1s;
+.menuphoto img {
+    width: 150px;
+    height: 150px;
 }
 
-tr:hover {
-    display: block;
-    height: 200px; 
+.menutwo {
+width: 50%;
+display: flex;
+flex-direction: column;
 }
 
-.custom-table tr.background {
-    background-image: none; 
-    position: relative;
+.menuname{
+width: 100%;
 }
 
-.custom-table tr.background1:hover {
-    background-image: url("../img/dj4.jpg"); 
-    background-size: cover; 
-    background-position: center;
+.menuprice {
+width: 100%;
 }
 
-.custom-table tr.background2:hover {
-    background-image: url("../img/dj7.jpg"); 
-    background-size: cover;
-    background-position: center;
+.active {
+    background-color: gray;
+    color: white;
 }
 
-.custom-table tr.background3:hover {
-    background-image: url("../img/dj3.jpg"); 
-    background-size: cover; 
-    background-position: center;
-}
-.custom-table tr.background4:hover {
-    background-image: url("../img/dj9.jpeg");  
-    background-size: cover;
-    background-position: center;
-}
+  /* block2 */
 
-.custom-table tr.background5:hover {
-    background-image: url("../img/dj5.jpg"); 
-    background-size: cover; 
-    background-position: center;
-}
-
-.custom-table tr.background6:hover {
-    background-image: url("../img/dj6.jpeg"); 
-    background-size: cover;
-    background-position: center;
-}
-
-.custom-table tr.background7:hover {
-    background-image: url("../img/dj1.jpg");  
-    background-size: cover;
-    background-position: center;
-}
-.custom-table tr.background8:hover {
-    background-image: url("../img/dj8.jpg");  
-    background-size: cover;
-    background-position: center;
-}
-
-.custom-table tr.background9:hover {
-    background-image: url("../img/dj9.jpeg"); ; 
-    background-size: cover;
-    background-position: center;
-}
-.custom-table tr.background10:hover {
-    background-image: url("../img/dj10.jpg"); 
-    background-size: cover;
-    background-position: center;
-}
-.custom-table tr {
-    background-color: transparent; 
-}
-
-  /* List */
-
-  /* Main */
+  /* Body */
 
   /* ----- */
 
@@ -370,25 +369,21 @@ tr:hover {
             justify-content: center;
             }
 
-            tr:hover td {
+            .innerblock22 {
+                height: 125px;
                 width: 100%;
-                font-size: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 5%;
-            }
-            .djs {
-                font-size: 30px;
-            }
+              }
+            
+            
       }
     
       @media only screen and (max-width: 480px) {
-        
+        .menuphoto img {
+            width: 100px;
+            height: 100px;
+        }
       }
     
       @media only screen and (max-width: 414px) {
         
       }
-
-      

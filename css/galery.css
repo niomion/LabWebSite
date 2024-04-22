@@ -38,7 +38,7 @@ body {
 }
 
 .logolink:hover img.merg1 {
-  content: url("/img/logohover.png");
+  content: url("../img/logohover.png");
 }
 
 .logolink.linkmain {
@@ -320,6 +320,10 @@ a:hover {
               .modal-content {
                 width: 100%;
               }
+
+        .djs {
+            font-size: 30px;
+        }
       }
     
       @media only screen and (max-width: 480px) {

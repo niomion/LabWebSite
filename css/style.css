@@ -19,6 +19,10 @@ body {
       "YROT" 0;
 }
 
+.indent {
+  text-indent: 20px;
+}
+
 /* Head */
 
 /* Nav */
@@ -38,7 +42,7 @@ body {
 }
 
 .logolink:hover img.merg1 {
-  content: url("/img/logohover.png");
+  content: url("../img/logohover.png");
 }
 
 .logolink.linkmain {
@@ -304,12 +308,16 @@ a:hover {
   
   .innerblock3 {
     display: flex;
+    flex-direction: column;
     width: 50%;
     padding: 1% 2% 0 0;
     font-size: 27px;
     text-align: justify;
   }
 
+.innerblock3, .innerblock83, .innerblock32 p {
+  text-indent: 20px;
+}
 
   /* Block1 */
 
@@ -351,6 +359,7 @@ a:hover {
 
   .innerblock83 {
     display: flex;
+    flex-direction: column;
     width: 50%;
     padding: 1% 1% 0 1%;
     font-size: 27px;
@@ -358,7 +367,7 @@ a:hover {
   }
 
 
-  /* Block1.2 */ 
+  /* Block1.1 */ 
 
   /* Block2 */
 
@@ -492,6 +501,7 @@ a:hover {
     display: flex;
     justify-content: center;
     color: black;
+    flex-direction: column;
   }
 
   .innerblock32 iframe {
@@ -766,7 +776,7 @@ a:hover {
       }
 
       .innerblock31 {
-        font-size: 20px;
+        font-size: 19px;
       }
 
       .innerblock41 {
