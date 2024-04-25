@@ -504,11 +504,11 @@ a:hover {
     flex-direction: column;
   }
 
-  .innerblock32 iframe {
-    margin: 3%;
-    width: 100%;
-}
-
+  #contentframe {
+    position:relative;
+    right: 50px;
+    top: 50px;
+  }
 
   /* Block3 */
 

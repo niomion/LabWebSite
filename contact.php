@@ -36,29 +36,29 @@
     <nav class="flex-nav">
         <div>
             <span class="openmobile" onclick="openNav()">&#9776;</span>
-            <a class="logolink linkmain" href="index.html"><img src="img/logo.png" class="merg1" alt="logo">
+            <a class="logolink linkmain" href="index.php"><img src="img/logo.png" class="merg1" alt="logo">
                 <p class="fontneon">Midnight Miami</p>
             </a>
         </div>
         <div>
-            <a href="music.html">Music</a>
+            <a href="music.php">Music</a>
         </div>
         <div>
-            <a href="bar.html">Bar</a>
+            <a href="bar.php">Bar</a>
         </div>
         <div>
-            <a href="galery.html">Gallery</a>
+            <a href="galery.php">Gallery</a>
         </div>
         <div>
-            <a class="text-underlined" href="contact.html">Contact</a>
+            <a class="text-underlined" href="contact.php">Contact</a>
         </div>
     </nav>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="music.html">Music</a>
-        <a href="bar.html">Bar</a>
-        <a href="galery.html">Gallery</a>
-        <a class="text-underlined" href="contact.html">Contact</a>
+        <a href="music.php">Music</a>
+        <a href="bar.php">Bar</a>
+        <a href="galery.php">Gallery</a>
+        <a class="text-underlined" href="contact.php">Contact</a>
     </div>
 
     <main>
