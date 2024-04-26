@@ -4,6 +4,28 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
+#err1 {
+  display: none;
+  color: red !important;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+#err2 {
+  display: none;
+  color: red !important;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
 body {
     background: rgb(53,92,125);
     background: linear-gradient(0deg, rgba(53,92,125,1) 0%, rgba(108,91,123,1) 35%, rgba(192,108,132,1) 100%); 
@@ -486,6 +508,8 @@ a:hover {
     height: 100%;
   }
 
+  .error {color: #FF0000;}
+
   .innerblock31 {
     background-color: #404044;
     text-align: center;
@@ -603,6 +627,7 @@ a:hover {
     display: flex;
     justify-content: center;
     color: black;
+    width: 85%;
   }
 
   input[type=text], select {
@@ -623,7 +648,7 @@ a:hover {
     background-color:#404044;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: auto;
     border: none;
     border-radius: 4px;
     cursor: pointer;

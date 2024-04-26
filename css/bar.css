@@ -38,7 +38,7 @@ body {
 }
 
 .logolink:hover img.merg1 {
-  content: url("/img/logohover.png");
+  content: url("../img/logohover.png");
 }
 
 .logolink.linkmain {

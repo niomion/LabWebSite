@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Tilt+Neon&display=swap" rel="stylesheet">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script type="module" src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/img/logosite.ico">
     <title>Midnight Miami</title>
 </head>
@@ -270,11 +271,11 @@
                 <div class="innerblock31">
                     <h1>Where you can find us?</h1>
                 </div>
-                <div class="innerblock32"> <div id="contentframe" style="position:relative; right: 3%;">
+                <div class="innerblock32">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114937.45443914585!2d-80.28779023462164!3d25.81032149040667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a6172bfeddb9%3A0x37be1741259463eb!2z0JzQsNGP0LzRli3QkdGW0YcsINCk0LvQvtGA0LjQtNCwLCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1713639480537!5m2!1suk!2sua"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+                        width="600" height="450" style="border:0; margin: auto;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="innerfblock2">
@@ -294,12 +295,13 @@
                 <h1>Subscribe to our newsletter!</h1>
             </div>
             <div class="innerblock52">
-                <form action="#">
+            <form>
                     <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                
-                    <label for="lname">Email</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your email..">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                    <label id="err1">Please provide your name!</label>
+                    <label style="" for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="example@mail.com">
+                    <label id="err2">Please provide your email!</label>
                     <input type="submit" value="Submit">
                 </form>
             </div>
@@ -319,4 +321,5 @@
 </body>
 <script src="js/carousel.js"></script>
 <script src="js/script.js"></script>
+<script src="js/database.js"></script>
 </html>
